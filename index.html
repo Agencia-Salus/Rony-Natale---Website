@@ -1,0 +1,196 @@
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/default.css" rel="stylesheet" type="text/css">
+    <link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+
+    <title>Rony Natale</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="top_nav">
+
+            <a href=""><img src="images/Logo-Assinatura-2-e1585335310156.webp" class="logo"></a>
+
+            <nav>
+                <ul class="nav">
+                    <li><a href="#" class="scroll">HOME</a></li>
+                    <li><a href="#about" class="scroll">SOBRE</a></li>
+                    <li> <a href="#tratamentos">TRATAMENTOS</a></li>
+                    <li><a href="#galeria">GALERIA</a></li>
+                    <li><a href="#artigos">ARTIGOS</a></li>
+                    <li><a href="#contatos" id="cotatos_button">CONTATOS</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <section class="hero" id="hero">
+            <img src="images/logo-oficial-rony-natale-e1585325560555-400x208.webp">
+            <h2 class="hero_header">Rony Natale</h2>
+            <p class="tagline">Psicanalista</p>
+        </section>
+
+        <section class="about" id="about">
+            <h2>Sobre</h2>
+
+            <table>
+                <tr>
+                    <td><img src="images/R02-300x200.webp" /></td>
+                    <td>
+                        <p class="text_column">Sou psicólogo de formação acadêmica, estudo e desenvolvo a psicanálise como método de intervenção a partir das abordagens de Freud, Lacan e alguns outros. Faço parte do Grupo de Estudos de Psicanálise de Vitória, onde mantemos
+                            constante retorno ao ensino do fundador, Freud, e daquele que consideramos ter feito a psicanálise avançar e lidar com as questões de nosso tempo, Lacan. É por seguir a referência deles que não desconsideramos a necessidade
+                            de reinventar a psicanálise a cada nova análise que se inicia.</p>
+                    </td>
+                </tr>
+            </table>
+
+            <button>Saiba Mais</button>
+        </section>
+
+        <div id="tratamentos">
+            <h2>Tratamentos</h2>
+            <table>
+                <tr>
+                    <td>
+                        <img src="images/psicanálise-e1585014783110.webp" />
+                        <h3>Psicanálise</h3>
+                        <p>Trata-se de um método de investigação do inconsciente, cujo instrumento fundamental é a linguagem. O sujeito do inconsciente se funda na linguagem e, em decorrência disso, seu padecimento está referido ao fato de a linguagem, embora
+                            o constituir, não o completar. Em caminho diverso do mercado capitalista, que visa oferecer sempre um gadget que complete o sujeito, a psicanálise visa o defrontar com a incontornável incompletude. E, ao avançar em um percurso
+                            de análise, é que tal encontro poderá ocorrer. A consequência talvez não seja a oferta de felicidade e bem-estar, mas a lucidez necessária para lidar com as adversidades que nos acometem a todo tempo. Apostamos em um sujeito
+                            lúcido, habilitado a viver, trabalhar, amar, sem crer que haja um bem que o abstenha das dificuldades próprias da vida.</p>
+                    </td>
+
+                    <td>
+                        <img src="images/psicoterapia-e1585016901955.webp" />
+                        <h3>Psicoterapia</h3>
+                        <p>A psicoterapia em psicanálise é justamente o processo de análise em que um analisando vai ao encontro do analista para endereçar a ele uma fala, buscando uma solução para seu sofrimento. Ao analista, cabe oferecer uma “não resposta”,
+                            caso contrário, entraria no engodo do regime de mercado, que visa solucionar todo e qualquer problema do sujeito. A não resposta convoca o sujeito a avançar cada vez mais na busca de respostas, o que o permite encontrar novas
+                            questões e perceber de que se trata quanto ao seu desejo. Para condensar de modo irônico o que seria uma análise, Lacan nos disse “A análise é o que se espera de um analista”, remetendo à necessidade de se questionar o que
+                            é um psicanalista, que prática exerce, se está orientado pelo desejo do analista ou se ocupa o lugar de mais um gadget no mercado. Ao fim ao cabo, o analista deve ter passado pelo processo de análise que o levou a se autorizar
+                            analista, podendo ocupar o lugar de quem convoca o outro a percorrer o mesmo processo e se deparar com o horizonte da não resposta que é o desejo de cada um.</p>
+                    </td>
+                </tr>
+            </table>
+            <button>Marcar Sessão</button>
+        </div>
+
+        <div id="curriculo">
+            <h2>Psicanalista Rony Natale</h2>
+            <h3>CRP 16/2009</h3>
+            <img src="images/R01-scaled-e1585011924827-245x300.webp" />
+            <p>→ Graduado em Psicologia na UFES em 2007;</p>
+            <p>→ Mestrado em Psicologia Clínica na PUC-RJ em 2018;</p>
+            <p>→ Doutorado em Psicologia Clínica. Linha de Pesquisa: Psicanálise,</p>
+            <p>clínica e cultura (em andamento) na PUC-RJ.</p>
+            <button>Saiba Mais</button>
+        </div>
+
+        <div id="artigos">
+            <h1 style="visibility: hidden;">artigos</h1>
+            <h2>Artigos</h2>
+            <table>
+                <tr>
+                    <td id="artigo-01">
+                        <h3>Da pulsão anarquista ao trabalho de cultura - a transgressão vital no pensamento de Nathalie Zatzman</h3>
+                        <img src="images/cover_issue_951_pt_BR-600x819.webp" />
+                    </td>
+
+                    <td id="artigo-02">
+                        <h3>A transgressão como saída psíquica vital</h3>
+                        <img src="images/Sem-Título-2-600x819.webp" />
+                    </td>
+
+                </tr>
+            </table>
+        </div>
+
+        <div id="galeria">
+            <h2>Galeria</h2>
+            <table>
+
+                <tr>
+                    <td style="background-image: url(images/R09-scaled.webp)" id="img1" class="grow" />
+                    <td style="background-image: url(images/R16-scaled.webp)" id="img2" class="grow" />
+                </tr>
+
+                <tr>
+                    <td style="background-image: url(images/2018-12-01.webp)" id="img3" class="grow" />
+                    <td style="background-image: url(images/unnamed-1.webp)" id="img4" class="grow" />
+                </tr>
+            </table>
+        </div>
+
+        <div id="inscrecao">
+            <h2>Agende uma sessão</h2>
+            <h3>Entre em contato conosco e retire suas duvidas, ou marque um horário.</h3>
+            <input id="nome" placeholder="Nome" name="nome" type="text" class="input-text" />
+            <input id="email" placeholder="E-mail" name="email" type="email" class="input-text" />
+            <input id="assunto" placeholder="Assunto" name="assunto" type="text" class="input-text" />
+            <input id="menssagem" placeholder="Menssagem" name="menssagem" type="text" class="input-text">
+            <input id="button-submit" type="submit" />
+        </div>
+
+        <footer id="contatos">
+            <table>
+                <tr>
+                    <td id="column-1">
+                        <img src="images/Logo-Assinatura-1-1-300x75.webp" />
+                        <p>“Após me formar em Psicologia na UFES (Universidade Federal do Espírito Santo), decidi montar meu consultório, onde ofereço tratamento para quem se encontra com alguma forma de sofrimento psíquico. Já atuo na área de Psicologia
+                            há 12 anos.”</p>
+                    </td>
+                    <td id="column-2">
+                        <h3>Contatos</h3>
+                        <p>Rua Desembargador Ferreira Coelho, 330, </p>
+                        <p>sala 912</p>
+                        <p>(27) 99949-7289</p>
+                        <p>natalerony@gmail.com</p>
+                    </td>
+                    <td id="column-3">
+                        <h3>Localização</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d29933.663056003537!2d-40.300097!3d-20.312355!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5c82cfc4fae3393a!2sPsicoterapia%20-%20Rony%20Natale!5e0!3m2!1spt-BR!2sbr!4v1587172429471!5m2!1spt-BR!2sbr"
+                            width="350" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </td>
+                </tr>
+            </table>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
